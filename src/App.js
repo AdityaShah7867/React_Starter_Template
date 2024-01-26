@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Landing from "./Pages/Landing/Landing";
 import Document from "./Pages/Docs/Document";
 import Navbar from "./Components/Navbar/Navbar";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/docs" element={<Document />} />
-         
+          <Route path="/dashboard" element={<Dashboard />} />
 
           {/* PRIVATE ROUTES BELOW THIS */}
           {/* <Route path="/" element={<Private />}>
