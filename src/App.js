@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
+import Profile from "./Pages/Profile/Profile";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
           {/* PRIVATE ROUTES BELOW THIS */}
           {/* <Route path="/" element={<Private />}>
             <Route path="/editcustomer" element={<CustomerEdiit />} />
