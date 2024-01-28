@@ -9,7 +9,7 @@ const Dash = () => {
             <br/>
           <p className="text-center text-xl font-bold">DASHBOARD</p>
         </div>
-        <div className="p-36 -mt-24">
+        <div className="p-6 md:p-36 md:-mt-24">
           <img src={IMG} alt="dash" />
         </div>
       </div>

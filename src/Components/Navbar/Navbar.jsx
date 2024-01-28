@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-       <section className="w-full px-8 text-gray-700 bg-white">
-          <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+       <section className="w-full px-8 text-gray-700 z-50 bg-white">
+          <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl z-50">
             <div className="relative flex flex-col md:flex-row">
               
               <NavLink
@@ -34,18 +34,18 @@ const Navbar = () => {
               </nav>
             </div>
             <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
-              <a
-                href="#"
-                className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap transition duration-150 ease-in-out hover:text-gray-900"
+            <NavLink
+                  to="/login"
+                className="text-base font-medium leading-6 z-50 text-gray-600 whitespace-no-wrap transition duration-150 ease-in-out hover:text-gray-900"
               >
                 Sign in
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+              </NavLink>
+              <NavLink
+                to="/register"
+                className="inline-flex z-50 items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
               >
                 Sign up
-              </a>
+              </NavLink>
             </div>
           </div>
         </section>

@@ -6,7 +6,8 @@ import Landing from "./Pages/Landing/Landing";
 import Document from "./Pages/Docs/Document";
 import Navbar from "./Components/Navbar/Navbar";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-
+import Login from "./Pages/Auth/Login";
+import Register from "./Pages/Auth/Register";
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/docs" element={<Document />} />
           <Route path="/dashboard" element={<Dashboard />} />
-
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           {/* PRIVATE ROUTES BELOW THIS */}
           {/* <Route path="/" element={<Private />}>
             <Route path="/editcustomer" element={<CustomerEdiit />} />
