@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import ButtonDoc from "./Buttons";
 import CardDoc from "./Card";
 import Dash from "./Dash";
+import ImgCard from "./ImgCard";
 
 
 const Document = () => {
@@ -11,6 +12,7 @@ const Document = () => {
     <div className="mb-12">
     <ButtonDoc/>
     <CardDoc/>
+    <ImgCard/>
     <Dash/>
     </div>
   );
