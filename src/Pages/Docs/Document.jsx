@@ -14,6 +14,7 @@ const Document = () => {
     <CardDoc/>
     <ImgCard/>
     <Dash/>
+    Created by Aditya Shah
     </div>
   );
 };
